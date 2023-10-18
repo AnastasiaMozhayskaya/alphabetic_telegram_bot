@@ -4,7 +4,9 @@ import logging
 from aiogram import Bot, Dispatcher, executor, types
 #from config import TOKEN
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(filename='logs.txt', 
+                    filemode='a',
+                    level=logging.DEBUG)
 
 TOKEN = os.getenv('TOKEN')
 
